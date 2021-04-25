@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "tableName": "recipes",
+      "partitionKey": "recipes",
+      "connection": "0042_PICK_OUT_OF_HAT_STORAGE",
+      "name": "recipeEntities",
+      "type": "table",
+      "direction": "out"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
