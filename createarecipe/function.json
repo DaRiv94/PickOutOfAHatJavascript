@@ -18,6 +18,14 @@
       "direction": "out"
     },
     {
+      "name": "existingRecipeEntities",
+      "type": "table",
+      "tableName": "recipes",
+      "partitionKey": "recipes",
+      "connection": "0042_PICK_OUT_OF_HAT_STORAGE",
+      "direction": "in"
+    },
+    {
       "type": "http",
       "direction": "out",
       "name": "res"
